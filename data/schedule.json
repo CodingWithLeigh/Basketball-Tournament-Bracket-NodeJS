@@ -1,0 +1,72 @@
+{
+  "sunsvsnuggets": {
+    "id": "sunsvsnuggets",
+    "title": "Suns vs Nuggets",
+    "team1": "Phoenix Suns (Roomy)",
+    "team2": "Denver Nuggets (Amier)",
+    "series": "1-3",
+    "score1": 102,
+    "score2": 99,
+    "winner": "Suns",
+    "games": [
+      {
+        "date": "2024-06-01",
+        "score1": 102,
+        "score2": 99,
+        "winner": "Suns"
+      },
+      {
+        "date": "2024-06-02",
+        "score1": "",
+        "score2": "",
+        "winner": ""
+      },
+      {
+        "date": "2024-06-03",
+        "score1": "",
+        "score2": "",
+        "winner": ""
+      },
+      {
+        "date": "2024-06-04",
+        "score1": "",
+        "score2": "",
+        "winner": ""
+      },
+      {
+        "date": "2024-06-03",
+        "score1": "",
+        "score2": "",
+        "winner": ""
+      },
+      {
+        "date": "2024-06-04",
+        "score1": "",
+        "score2": "",
+        "winner": ""
+      }
+    ]
+  },
+  "magicvsblazers": {
+    "id": "magicvsblazers",
+    "title": "Magic vs Blazers",
+    "series": "3-0",
+    "score1": 102,
+    "score2": 99,
+    "winner": "Magic",
+    "games": [
+      {
+        "date": "2024-06-01",
+        "score1": 102,
+        "score2": 99,
+        "winner": "Magic"
+      },
+      {
+        "date": "2024-06-02",
+        "score1": 110,
+        "score2": 105,
+        "winner": "Blazers"
+      }
+    ]
+  }
+}

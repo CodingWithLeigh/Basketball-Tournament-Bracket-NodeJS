@@ -1,0 +1,8 @@
+{
+    "teams": {
+        "eastern": "Eastern Conference",
+        "western": "Western Conference",
+        "current": "Current Teams",
+        "removed": "Removed Teams"
+    }
+}

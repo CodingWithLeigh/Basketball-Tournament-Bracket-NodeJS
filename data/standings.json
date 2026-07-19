@@ -1,0 +1,54 @@
+{
+    "season1": {
+        "Los Angeles Lakers": {
+            "id": "unknown",
+            "player": "Roomy",
+            "wins": 0,
+            "loss": 0
+        },
+        "Washington Wizards": {
+            "id": "unknown",
+            "player": "Amier",
+            "wins": 0,
+            "loss": 0
+        },
+        "Milwaukee Bucks": {
+            "id": "unknown",
+            "player": "Ivan",
+            "wins": 0,
+            "loss": 0
+        },
+        "Golden State Warriors": {
+            "id": "unknown",
+            "player": "BukoManga",
+            "wins": 0,
+            "loss": 0
+        }
+    },
+    "season2": {
+        "Denver Nuggets": {
+            "id": "sunsvsnuggets",
+            "player": "Amier",
+            "wins": 0,
+            "loss": 0
+        },
+        "Phoenix Suns": {
+            "id": "sunsvsnuggets",
+            "player": "Roomy",
+            "wins": 0,
+            "loss": 0
+        },
+        "Orlando Magic": {
+            "id": "magicvsblazers",
+            "player": "Ivan",
+            "wins": 0,
+            "loss": 0
+        },
+        "Portland Trail Blazers": {
+            "id": "magicvsblazers",
+            "player": "BukoManga",
+            "wins": 0,
+            "loss": 0
+        }
+    }
+}

@@ -1,0 +1,48 @@
+{
+  "eastern": [
+    "New York Knicks",
+    "Boston Celtics",
+    "Cleveland Cavaliers",
+    "Indiana Pacers",
+    "Detroit Pistons",
+    "Orlando Magic",
+    "Philadelphia 76ers",
+    "Miami Heat",
+    "Atlanta Hawks",
+    "Chicago Bulls",
+    "Toronto Raptors",
+    "Brooklyn Nets",
+    "Charlotte Hornets",
+    "Milwaukee Bucks",
+    "Washington Wizards"
+  ],
+  "western": [
+    "Oklahoma City Thunder",
+    "San Antonio Spurs",
+    "Denver Nuggets",
+    "Los Angeles Lakers",
+    "Minnesota Timberwolves",
+    "Memphis Grizzlies",
+    "Portland Trail Blazers",
+    "Phoenix Suns",
+    "Golden State Warriors",
+    "Houston Rockets",
+    "Sacramento Kings",
+    "Dallas Mavericks",
+    "Los Angeles Clippers",
+    "New Orleans Pelicans",
+    "Utah Jazz"
+  ],
+  "current": [
+    "Denver Nuggets (Amier)",
+    "Phoenix Suns (Roomy)",
+    "Orlando Magic (Ivan)",
+    "Toronto Raptors (BukoManga)"
+  ],
+  "removed": [
+    "Los Angeles Lakers (Roomy)",
+    "Washington Wizards (Amier)",
+    "Milwaukee Bucks (Ivan)",
+    "Golden State Warriors (BukoManga)"
+  ]
+}
