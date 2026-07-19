@@ -1,0 +1,167 @@
+<%- include("./partials/nav.ejs"), ({ title: title, status: status }) %>
+
+<head>
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
+
+</head>
+
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding:30px;
+}
+
+.container{
+    position: fixed;
+    inset: 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    pointer-events:none;
+}
+
+.login-box{
+    pointer-events:auto;
+    background:white;
+    border-radius:25px;
+    padding:60px 30px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.login-box h1{
+    font-size:4rem;
+    margin-bottom:50px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:18px;
+}
+
+input{
+    width:100%;
+    max-width:260px;
+    padding:16px 20px;
+    border:none;
+    border-radius:30px;
+    background:#ddd8d8;
+    text-align:center;
+    font-size:16px;
+    outline:none;
+}
+
+input::placeholder{
+    color:white;
+}
+
+button{
+    margin-top:10px;
+    border:none;
+    background:black;
+    color:white;
+    padding:16px 35px;
+    border-radius:30px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#333;
+}
+
+@media (max-width:768px){
+
+    .login-box{
+        padding:40px 20px;
+    }
+
+    .login-box h1{
+        font-size:3rem;
+        margin-bottom:40px;
+    }
+
+    input{
+        max-width:100%;
+    }
+
+    button{
+        width:100%;
+        max-width:220px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .login-box h1{
+        font-size:2.5rem;
+    }
+
+    input{
+        padding:14px;
+    }
+
+    button{
+        padding:14px;
+    }
+
+}
+
+@view-transition {
+            navigation: auto;
+        }
+
+        ::view-transition-old(root) {
+            animation: fade-out .5s ease;
+        }
+
+        ::view-transition-new(root) {
+            animation: fade-in .5s ease;
+        }
+
+        @keyframes fade-out {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+
+        @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+</style>
+
+    <div class="container">
+    <div class="login-box">
+        <h1>Login</h1>
+
+        <form action="/login" method="POST">
+            <input type="text" name="username" placeholder="username" required>
+            <input type="password" name="password" placeholder="password" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<script>
+
+if("<%= status %>" === "error") {
+    alertify.error("Invalid username or password.");
+} else if("<%= status %>" === "success") {
+    alertify.success("Login successful!");
+}
+
+</script>
+
+<%- include("./partials/ball.ejs"), ({ title: title }) %>
