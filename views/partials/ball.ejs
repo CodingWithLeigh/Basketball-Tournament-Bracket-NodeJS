@@ -1,0 +1,62 @@
+<style>
+
+.ball img {
+position: absolute;
+height: auto;
+width: 100px;
+bottom: 0;
+right: 0;
+padding: 8px;
+z-index: 1000;
+}
+</style>
+
+
+<div class="cointainers"> 
+<div class="ball">
+<img src="https://i.imgur.com/BfQKlGQ.png" alt="Ball">
+</div>
+</div>
+
+<script>
+
+const ball = document.querySelector('.ball img');
+
+bounce1()
+
+function bounce1() {
+setTimeout(() => {
+ball.style.bottom = "60px";
+ball.style.height = "auto";
+bounce2()
+
+console.log("bounce 1")
+
+}, 800);
+}
+
+function bounce2() {
+
+clearInterval(bounce1)
+
+setTimeout(() => {
+ball.style.bottom = "0px";
+ball.style.height = "70px";
+console.log("bounce 2")
+bounce3()
+}, 900);
+}
+
+function bounce3() {
+
+clearInterval(bounce2)
+
+setTimeout(() => {
+ball.style.bottom = "30px";
+ball.style.height = "90px";
+console.log("bounce 3")
+bounce1()
+}, 800);
+}
+
+</script>
