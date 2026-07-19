@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><%= title %></title>
+<link rel="icon" type="image/png" href="https://i.imgur.com/T2FaZ9q.png">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    padding:20px;
+    background:#2d2d2d;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    width:100%;
+    margin:0;
+
+    background:#000;
+    border-radius:30px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:12px 24px;
+}
+
+.logo img{
+    height:48px;
+}
+
+.nav-links{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 40px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a{
+    color:#fff;
+    text-decoration:none;
+    font-size:2rem;
+    font-weight:bold;
+}
+
+.nav-links a.active{
+    color:#19398A;
+}
+
+@media (max-width:1167px){
+
+    .navbar{
+        overflow-x:auto;
+        scrollbar-width:none;
+    }
+
+    .navbar::-webkit-scrollbar{
+        display:none;
+    }
+
+    .nav-links{
+        position:static; 
+        transform:none;
+        left:auto;
+
+        display:flex;
+        flex-wrap:nowrap;
+        white-space:nowrap;
+        gap:20px;
+        min-width:max-content;
+    }
+
+    .nav-links a{
+        font-size:20px;
+    }
+    .logo{ margin-right:30px; }
+
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <img src="https://i.imgur.com/9UosJvU.png">
+    </div>
+
+    <% if(status === "login") { %>
+    <% if(title === "Games") { %>
+    <ul class="nav-links">
+        <li><a class="active" href="/">Games</a></li>
+        <li><a href="/bracket">Bracket</a></li>
+        <li><a href="/standings">Standings</a></li>
+        <li><a href="/teams">Teams</a></li>
+        <li><a href="/admin">Admin</a></li>
+    </ul>
+    <% } else if(title === "Bracket") { %>
+    <ul class="nav-links">
+        <li><a href="/">Games</a></li>
+        <li><a class="active" href="/bracket">Bracket</a></li>
+        <li><a href="/standings">Standings</a></li>
+        <li><a href="/teams">Teams</a></li>
+        <li><a href="/admin">Admin</a></li>
+    </ul>
+    <% } else if(title === "Standings") { %>
+    <ul class="nav-links">
+        <li><a href="/">Games</a></li>
+        <li><a href="/bracket">Bracket</a></li>
+        <li><a class="active" href="/standings">Standings</a></li>
+        <li><a href="/teams">Teams</a></li>
+        <li><a href="/admin">Admin</a></li>
+    </ul>
+    <% } else if(title === "Teams") { %>
+    <ul class="nav-links">
+        <li><a href="/">Games</a></li>
+        <li><a href="/bracket">Bracket</a></li>
+        <li><a href="/standings">Standings</a></li>
+        <li><a class="active" href="/teams">Teams</a></li>
+        <li><a href="/admin">Admin</a></li>
+    </ul>
+      <% } else if(title === "Admin") { %>
+    <ul class="nav-links">
+        <li><a href="/">Games</a></li>
+        <li><a href="/bracket">Bracket</a></li>
+        <li><a href="/standings">Standings</a></li>
+        <li><a href="/teams">Teams</a></li>
+        <li><a class="active" href="/admin">Admin</a></li>
+    </ul>
+    <% } else { %>
+    <ul class="nav-links">
+        <li><a href="/">Games</a></li>
+        <li><a href="/bracket">Bracket</a></li>
+        <li><a href="/standings">Standings</a></li>
+        <li><a href="/teams">Teams</a></li>
+        <li><a href="/admin">Admin</a></li>
+    </ul>
+    <% } %>
+    <% } else { %>
+    <% if(title === "Games") { %>
+    <ul class="nav-links">
+        <li><a class="active" href="/">Games</a></li>
+        <li><a href="/bracket">Bracket</a></li>
+        <li><a href="/standings">Standings</a></li>
+        <li><a href="/teams">Teams</a></li>
+        <li><a href="/login">Login</a></li>
+    </ul>
+    <% } else if(title === "Bracket") { %>
+    <ul class="nav-links">
+        <li><a href="/">Games</a></li>
+        <li><a class="active" href="/bracket">Bracket</a></li>
+        <li><a href="/standings">Standings</a></li>
+        <li><a href="/teams">Teams</a></li>
+        <li><a href="/login">Login</a></li>
+    </ul>
+    <% } else if(title === "Standings") { %>
+    <ul class="nav-links">
+        <li><a href="/">Games</a></li>
+        <li><a href="/bracket">Bracket</a></li>
+        <li><a class="active" href="/standings">Standings</a></li>
+        <li><a href="/teams">Teams</a></li>
+        <li><a href="/login">Login</a></li>
+    </ul>
+    <% } else if(title === "Teams") { %>
+    <ul class="nav-links">
+        <li><a href="/">Games</a></li>
+        <li><a href="/bracket">Bracket</a></li>
+        <li><a href="/standings">Standings</a></li>
+        <li><a class="active" href="/teams">Teams</a></li>
+        <li><a href="/login">Login</a></li>
+    </ul>
+      <% } else if(title === "Admin") { %>
+    <ul class="nav-links">
+        <li><a href="/">Games</a></li>
+        <li><a href="/bracket">Bracket</a></li>
+        <li><a href="/standings">Standings</a></li>
+        <li><a href="/teams">Teams</a></li>
+        <li><a class="active" href="/login">Login</a></li>
+    </ul>
+    <% } else { %>
+    <ul class="nav-links">
+        <li><a href="/">Games</a></li>
+        <li><a href="/bracket">Bracket</a></li>
+        <li><a href="/standings">Standings</a></li>
+        <li><a href="/teams">Teams</a></li>
+        <li><a href="/login">Login</a></li>
+    </ul>
+    <% } %>
+    <% } %>
+
+</nav>
+
+</body>
+</html>
