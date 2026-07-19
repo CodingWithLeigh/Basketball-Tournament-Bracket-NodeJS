@@ -1,0 +1,39 @@
+{
+    "qualifier": {
+        "quali1": {
+            "Phoenix Suns (Roomy)": "1",
+            "Denver Nuggets (Amier)": "3"
+        },
+        "quali2": {
+            "Orlando Magic (Ivan)": "1",
+            "Portland Trail Blazers (BukoManga)": "3"
+        }
+    }, 
+    "semifinals": {
+        "semi1": {
+            "Denver Nuggets (Amier)": "4",
+            "Portland Trail Blazers (BukoManga)": "3"
+        }
+    },
+    "finals": {
+        "finals1": {
+            "Denver Nuggets (Amier)": "0",
+            "TBA": ""
+        }
+    }, 
+    "champions": {
+        "champ": {
+            "TBA": ""
+        }
+    },
+    "loser": {
+        "loser1": {
+            "Phoenix Suns (Roomy)": "2",
+            "Orlando Magic (Ivan)": "3"
+        },
+        "loser2": {
+            "Portland Trail Blazers (BukoManga)": "0",
+            "TBA": ""
+        }
+    }
+}                   
