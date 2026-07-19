@@ -1,0 +1,62 @@
+<%- include("./partials/nav.ejs"), ({ title: "Games", status: status }) %>
+
+<head>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
+</head>
+
+<style>
+.cointainer{
+   margin-top: 2%;
+   background-color: #ffffff;
+   border-radius: 15px;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+
+.left,
+.right{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   margin: 2%;
+}
+
+.middle{
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.card {
+    background-color: #f0f0f0;
+    height: 120px;
+    width: 300px;
+    border-radius: 15px;
+    display: flex;
+    margin-bottom: 2%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+</style>
+
+<div class="cointainer">
+<div class="left">
+<div class="card">
+</div>
+</div>
+</div>
+
+<%- include("./partials/ball.ejs"), ({ title: title }) %>
